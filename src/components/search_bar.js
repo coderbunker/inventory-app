@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import itemsJSON from './data/inventory.json';
+import './../App.css';
 
 
 class SearchBar extends Component {
@@ -18,6 +19,7 @@ class SearchBar extends Component {
       return (
         <div className="search-bar">
           <input
+            placeholder="Search by UUID"
             value={this.state.shortId}
             onChange={event => this.onInputChange(event.target.value)} />
             <div>

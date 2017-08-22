@@ -6,7 +6,7 @@ const ItemDetail = ({item}) => {
   const link = item.result;
 
   if (!link) {
-    return <div>Show me QR code:)</div>;
+    return <div>Scan the QR code</div>;
   }
 
 
