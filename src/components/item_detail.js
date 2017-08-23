@@ -6,24 +6,23 @@ const ItemDetail = ({item}) => {
   const link = item.result;
 
   if (!link) {
-    return <div>Scan the QR code</div>;
+    return <div></div>;
   }
 
 
-    let id = link.substr(-36);
+  let id = link.substr(-36);
 
-    let matchedItem = itemsJSON.find(function(item) {
-      return item.uuid === id;
-    });
+  let matchedItem = itemsJSON.find(function(item) {
+    return item.uuid === id;
+  });
 
-    console.log(matchedItem);
 
   if (matchedItem) {
     return (
-        <div>
+        <div className="items">
           {
             Object.keys(matchedItem).map(function(key) {
-            return <p>{key}: {matchedItem[key]}</p>;
+            return <li><strong>{key}</strong>: {matchedItem[key]}</li>;
           })
         }
         </div>

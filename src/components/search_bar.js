@@ -22,9 +22,9 @@ class SearchBar extends Component {
             placeholder="Search by UUID"
             value={this.state.shortId}
             onChange={event => this.onInputChange(event.target.value)} />
-            <div>
+            <div className="items">
               {Object.keys(newItem).map(function(key) {
-                return <p>{key}: {newItem[key]}</p>;
+                return <li><strong>{key}</strong>: {newItem[key]}</li>;
               })}
             </div>
         </div>
