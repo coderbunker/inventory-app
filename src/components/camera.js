@@ -30,8 +30,6 @@ class Camera extends Component {
       width: 320
     }
 
-    let res;
-
     return (
       <div>
         <QrReader delay={this.state.delay} style={previewStyle} onError={this.handleError} onScan={this.handleScan}/>

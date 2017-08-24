@@ -19,7 +19,7 @@ const ItemDetail = ({item}) => {
     return (
       <div className="items">
         {Object.keys(matchedItem).map(function(key) {
-          return <li>
+          return <li key={key}>
             <strong>{key}</strong>: {matchedItem[key]}</li>;
         })
 }

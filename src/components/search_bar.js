@@ -20,10 +20,12 @@ class SearchBar extends Component {
       <div className="search-bar">
         <input placeholder="Search by UUID" value={this.state.shortId} onChange={event => this.onInputChange(event.target.value)}/>
         <div className="items">
+
           {Object.keys(newItem).map(function(key) {
-            return <li>
+            return <li key={key}>
               <strong>{key}</strong>: {newItem[key]}</li>;
           })}
+
         </div>
       </div>
     );
@@ -33,7 +35,7 @@ class SearchBar extends Component {
     this.setState({shortId});
     let that = this;
 
-    let matchedItem = itemsJSON.filter(function(item) {
+    itemsJSON.filter(function(item) {
 
       let uuid = item.uuid;
 
@@ -42,6 +44,7 @@ class SearchBar extends Component {
           that.setState({matchedItem: item});
         }
       }
+      return "something";
     });
   }
 

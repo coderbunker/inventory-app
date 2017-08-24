@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import SearchBar from './components/search_bar';
 import Camera from './components/camera';
-import ItemDetail from './components/item_detail';
 
 class App extends Component {
   render() {
@@ -14,10 +12,10 @@ class App extends Component {
           <h2>CoderBunker Inventory App</h2>
         </div>
 
-        <p className="App-intro">
+        <div className="App-intro">
           <p>Scan the QR code</p>
           <Camera/>
-        </p>
+        </div>
 
         <SearchBar/>
 
