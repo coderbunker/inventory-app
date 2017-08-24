@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import QrReader from 'react-qr-reader';
 import ItemDetail from './item_detail';
 
-
 class Camera extends Component {
-  constructor(props){
+  constructor(props) {
     super(props)
     this.state = {
       delay: 1000,
@@ -14,41 +13,33 @@ class Camera extends Component {
 
     this.handleScan = this.handleScan.bind(this)
   }
-  handleScan(data){
+
+  handleScan(data) {
     if (data) {
-      this.setState({
-        result: data,
-      })
+      this.setState({result: data})
     }
   }
 
-  handleError(err){
+  handleError(err) {
     console.error(err)
   }
-  render(){
+
+  render() {
     const previewStyle = {
       height: 240,
-      width: 320,
+      width: 320
     }
 
     let res;
 
-
-    return(
+    return (
       <div>
-        <QrReader
-          delay={this.state.delay}
-          style={previewStyle}
-          onError={this.handleError}
-          onScan={this.handleScan}
-          />
-        <ItemDetail item={this.state} />
+        <QrReader delay={this.state.delay} style={previewStyle} onError={this.handleError} onScan={this.handleScan}/>
+        <ItemDetail item={this.state}/>
       </div>
     )
   }
 
-
 }
-
 
 export default Camera;
