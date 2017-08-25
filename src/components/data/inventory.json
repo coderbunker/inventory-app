@@ -1,14 +1,5 @@
 [
   {
-    "floor": "bunker",
-    "room": "big classroom",
-    "fixture": "light",
-    "location": "next to cupboard",
-    "models": "9W 2700k energy saving",
-    "TODO": "DONE",
-    "uuid": "80BE15E2-8221-4A77-B639-14438B487682"
-  },
-  {
     "floor": "402",
     "room": "open space",
     "fixture": "light",
@@ -153,7 +144,7 @@
     "details": "1 VGA port, 1 DVI-D port, 1 Video port",
     "Back up ink ": "has USB Entry",
     "serial": "CNOFFW757287263U",
-    "uuid": "6460B1B2-BF57-4C24-BB6F-F4CA2E23F3E5"
+    "uuid": "3FF0FE6D 3FF0FE6D-0C38-4A4E-A955-257187717CB8"
   },
   {
     "floor": "bunker",
@@ -161,11 +152,11 @@
     "fixture": "monitor",
     "models": "DELL U2311Hb",
     "qty": "1",
-    "details": "1 VGA/VGA port",
-    "TODO": "buy DVI",
+    "details": "1 VGA/VGA port, 1 DVI port",
+    "TODO": "buy VGA/HDMI coverter, DVI-D to Thunderbolt cable",
     "Back up ink ": "has USB Entry",
     "serial": "N/A",
-    "uuid": "68BF3270-8564-4DBE-94B6-D5EE8DD9FCC9"
+    "uuid": "3498A43C 3498A43C-23B4-407D-A741-24AB502A384F"
   },
   {
     "floor": "bunker",
@@ -174,10 +165,11 @@
     "models": "DELL P2416Db",
     "qty": "1",
     "details": "1 VGA/VGA port, HDMI, DVI-D",
-    "TODO": "buy HMDI+Thunderbolt",
+    "TODO": "buy HMDI",
     "Back up ink ": "has USB Entry ",
     "serial": "CN0NDY737426163A0NCLUA00",
-    "uuid": "68BF3270-8564-4DBE-94B6-D5EE8DD9FCC9"
+    "owner": "Ricky Ng-Adam",
+    "uuid": "697EEA54 697EEA54-3FA3-4023-A4A0-8A422C2D2790"
   },
   {
     "floor": "bunker",
@@ -186,11 +178,11 @@
     "models": "DELL P2416Db",
     "qty": "1",
     "details": "1 VGA/VGA port, HDMI, DVI-D",
-    "TODO": "buy HMDI+Thunderbolt",
+    "TODO": "buy HMDI",
     "Back up ink ": "has USB Entry ",
     "serial": "CN0NDY73742615BC1U9U",
     "owner": "Ricky Ng-Adam",
-    "uuid": "074DB275-82C4-43BD-9D81-C7FB3AFA92D7"
+    "uuid": "3927A010 3927A010-5F8A-494A-8A43-72BC91E51F12"
   },
   {
     "floor": "bunker",
@@ -199,7 +191,6 @@
     "models": "DELL 2408WFPb",
     "qty": "1",
     "details": "1 VGA/VGA port, 1 DVI-D port",
-    "TODO": "buy HMDI+Thunderbolt",
     "Back up ink ": "has USB Entry ",
     "serial": "CN0NN7927426186T09LS",
     "uuid": "5A4E5578-A802-40B6-9E34-66B5DBD7FB52"
@@ -211,10 +202,10 @@
     "models": "DELL 2007WFPb",
     "qty": "1",
     "details": "1 VGA port, 1 DVI-D port, 1 Video port",
-    "TODO": "buy DVI-D to Thunderbolt & DVI-D to HDMI",
+    "TODO": "buy VGA/HDMI coverter, DVI-D to Thunderbolt cable",
     "Back up ink ": "has USB Entry ",
     "serial": "CN0NF4094466336CN1FYL",
-    "uuid": "32C44B94-BCC8-46D3-81EC-06EEB6E5C318"
+    "uuid": "09546688 09546688-CE21-4CA4-863C-40FD79BEC36E"
   },
   {
     "floor": "bunker",
@@ -223,7 +214,7 @@
     "models": "DELL 2007WFPb",
     "qty": "1",
     "details": "1 VGA port, 1 DVI-D port, 1 Video port",
-    "TODO": "buy DVI-D to Thunderbolt & DVI-D to HDMI",
+    "TODO": "buy VGA/HDMI coverter, DVI-D to Thunderbolt cable",
     "Back up ink ": "has USB Entry ",
     "serial": "N/A",
     "uuid": "N/A"
@@ -235,9 +226,9 @@
     "models": "Samsung 943NWPLUS",
     "qty": "1",
     "details": "1 DVI-D port",
-    "TODO": "buy DVI-D to Thunderbolt & VGA to HDMI",
+    "TODO": "buy VGA/HDMI coverter, DVI-D to Thunderbolt cable",
     "serial": "MY19H9NZ301332B",
-    "uuid": "52814E84-FB1F-43EE-9835-3F8FEE546352"
+    "uuid": "1F88A55F 1F88A55F-5BD1-48B3-B5F7-18BA3F8CDADC"
   },
   {
     "floor": "bunker",
@@ -257,7 +248,7 @@
     "qty": "1",
     "details": "1 VGA, 1 HDMI port",
     "serial": "ETLAZ09047807001156310",
-    "uuid": "5709252E-6A43-4BBE-B9AD-49DC16A4F227"
+    "uuid": "37FC4A29 37FC4A29-F5A8-436E-BAE8-4399F773DBE3"
   },
   {
     "floor": "bunker",
@@ -266,8 +257,20 @@
     "models": "Samsung E2420L",
     "qty": "1",
     "details": "1 VGA port, 1 DVI-D port",
+    "TODO": "buy DVI-D to Thunderbolt & VGA to HDMI",
     "serial": "CL24HVQB900594K",
-    "uuid": "0CFD329E-D29E-4899-B9A9-5EF12B268991"
+    "uuid": "19D25D78 19D25D78-42CC-4C16-AD86-AB7EED2949C2"
+  },
+  {
+    "floor": "bunker",
+    "room": "big classroom",
+    "fixture": "moniter",
+    "models": "DELL 2209WA",
+    "qty": "1",
+    "details": "1 VGA port, 1 DVI-D port, 1 Video port",
+    "TODO": "buy VGA, DVI-D to Thunderbolt cable",
+    "serial": "N/A",
+    "uuid": "2A3FF388 2A3FF388-6CBD-438B-96CB-BBD14F78FA8E"
   },
   {
     "floor": "bunker",
@@ -475,7 +478,6 @@
     "models": "hp officejet pro 8500A(WIFI)"
   },
   {
-    "floor": "trash",
     "fixture": "printer",
     "location": "?",
     "models": "Canon MFC J4300",
@@ -503,6 +505,15 @@
     "location": "meeting room ",
     "models": "LG 47LK460-CC",
     "qty": "1",
-    "details": "1 HDMI,1 DVI,"
+    "details": "2 HDMI,1 VGA",
+    "TODO": "buy 2 meter HDMI, HDMI to Thunderbolt"
+  },
+  {
+    "floor": "bunker",
+    "room": "meeting room ",
+    "fixture": "TV",
+    "models": "Panasonic THP42U33C",
+    "details": "2 HDMI, 1 VGA, Video ports",
+    "serial": "KJ1630235"
   }
 ]

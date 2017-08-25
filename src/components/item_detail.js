@@ -9,10 +9,11 @@ const ItemDetail = ({item}) => {
     return <div></div>;
   }
 
-  let id = link.substr(-36);
+  let id = link.substr(27);
 
   let matchedItem = itemsJSON.find(function(item) {
-    return item.uuid === id;
+    let fullId = id.substr(0,8) + ' ' + id;
+    return item.uuid === id || item.uuid === fullId;
   });
 
   if (matchedItem) {

@@ -12,7 +12,7 @@ var worksheet = workbook.Sheets[first_sheet_name];
 
 const toJson = XLSX.utils.sheet_to_json(worksheet);
 
-fs.writeFile("public/inventory.json", JSON.stringify(toJson, null, 2), function(err) {
+fs.writeFile("src/components/data/inventory.json", JSON.stringify(toJson, null, 2), function(err) {
     if(err) {
         return console.log(err);
     }
