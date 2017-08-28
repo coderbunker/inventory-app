@@ -1,19 +1,28 @@
 import React from 'react';
 import itemsJSON from './data/inventory.json';
+import uuid from 'uuid-regexp';
 
 const ItemDetail = ({item}) => {
 
+
+
   const link = item.result;
+
+
 
   if (!link) {
     return <div></div>;
   }
 
-  let id = link.substr(27);
+  let id = uuid().exec(link)[0];
+
 
   let matchedItem = itemsJSON.find(function(item) {
-    let fullId = id.substr(0,8) + ' ' + id;
-    return item.uuid === id || item.uuid === fullId;
+    if (uuid().test(item.uuid)) {
+      return uuid().exec(item.uuid)[0] === id;
+    } else {
+      return null;
+    }
   });
 
   if (matchedItem) {
@@ -22,8 +31,7 @@ const ItemDetail = ({item}) => {
         {Object.keys(matchedItem).map(function(key) {
           return <li key={key}>
             <strong>{key}</strong>: {matchedItem[key]}</li>;
-        })
-}
+        })}
       </div>
 
     )
