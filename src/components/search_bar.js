@@ -41,7 +41,8 @@ class SearchBar extends Component {
 
       if (uuid) {
         if (uuid.substr(0, 8).toLowerCase() === shortId.toLowerCase()) {
-          that.setState({matchedItem: item});
+          // that.setState({matchedItem: item});
+          that.props.uuidFromCamera(uuid);
         }
       }
       return "something";

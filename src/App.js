@@ -2,8 +2,20 @@ import React, {Component} from 'react';
 import './App.css';
 import SearchBar from './components/search_bar';
 import Camera from './components/camera';
+import Result from './components/result';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      uuid: "",
+    }
+  }
+
+  getUuid = (uuid) => {
+    this.setState({ uuid });
+  } 
+
   render() {
     return (
       <div className="App">
@@ -14,10 +26,10 @@ class App extends Component {
 
         <div className="App-intro">
           <p>Scan the QR code</p>
-          <Camera/>
+        <Camera uuidFromCamera={this.getUuid} />
         </div>
-
-        <SearchBar/>
+        <SearchBar uuidFromCamera={this.getUuid} />
+        <Result uuid={this.state.uuid} />
 
       </div>
     );

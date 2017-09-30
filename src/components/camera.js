@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import QrReader from 'react-qr-reader';
-import ItemDetail from './item_detail';
+import uuid from 'uuid-regexp';
 
 class Camera extends Component {
   constructor(props) {
@@ -16,7 +16,8 @@ class Camera extends Component {
 
   handleScan(data) {
     if (data) {
-      this.setState({result: data})
+      // this.setState({result: data})
+      this.props.uuidFromCamera(data);
     }
   }
 
@@ -33,7 +34,6 @@ class Camera extends Component {
     return (
       <div>
         <QrReader delay={this.state.delay} style={previewStyle} onError={this.handleError} onScan={this.handleScan}/>
-        <ItemDetail item={this.state}/>
       </div>
     )
   }
